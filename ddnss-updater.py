@@ -28,7 +28,7 @@ def setLastIP(ip):
 
 def updateIP(ip):
     req = urllib.request.urlopen(
-        "https://ddnss.de/upd.php?key="+apikey+"&host=" + hostname)
+        "https://ddnss.de/upd.php?key="+apikey+"&host=" + hostname + "&ip="+ip)
     print(req.read())
 
 
