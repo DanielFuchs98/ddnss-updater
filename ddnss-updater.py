@@ -2,11 +2,18 @@
 
 import urllib.request
 import re
+import sys
 
-hostname = "fill_here"
-apikey = "fill_here"
+if len(sys.argv) != 3:
+    print("usage ddnss-updater.py <hostname> <apikey>")
+    sys.exit(-1)
+
+hostname = sys.argv[1]
+apikey = sys.argv[2]
 
 print("start ddnss-updater")
+
+
 
 
 def getMyIP():
